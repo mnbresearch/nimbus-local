@@ -1,0 +1,13 @@
+{
+  "name": "nimbus-local",
+  "version": "1.0.0",
+  "description": "Zero-dependency local AWS emulator: S3, SQS, DynamoDB, SNS, Secrets Manager and STS on one port. Starts in ~35 ms. Works with the AWS CLI, boto3 and AWS SDKs.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mridul Nanda (MNB Research / Abrobot.ai)",
+  "repository": { "type": "git", "url": "https://github.com/mnbresearch/nimbus-local.git" },
+  "bin": { "nimbus": "nimbus.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node nimbus.mjs", "test": "node --test tests/*.test.mjs", "test:boto3": "python3 tests/integration_boto3.py" },
+  "keywords": ["aws", "localstack", "localstack-alternative", "emulator", "s3", "sqs", "dynamodb", "sns", "secrets-manager", "testing", "mock"]
+}
